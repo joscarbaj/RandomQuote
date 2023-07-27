@@ -66,7 +66,7 @@ def send_form():
         email = request.form["email"]
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute("INSERT INTO users (name, email) VALUES (%s, %s)", (name, email))
+        cur.execute("INSERT INTO users (name, mail) VALUES (%s, %s)", (name, email))
         conn.commit()
         cur.close()
         conn.close()
@@ -76,4 +76,4 @@ def send_form():
         return redirect(url_for("Index"))
 
 if __name__ == "__main__":
-    app.run(debug=True, port=50000, host="0.0.0.0")
+    app.run(debug=False, port=50000, host="0.0.0.0")
