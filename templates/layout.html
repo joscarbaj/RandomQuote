@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Random Quotes</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="header__nav">
+            <ul>
+                <li> <a href="/">Home</a></li>
+                <li> <a href="/community">Community</a></li>
+                <li> <a href="/services">Services</a></li>
+                <li> <a href="/contact">Contacts</a></li>
+            </ul>
+
+
+        </nav>
+
+
+
+
+        <a href="/faq" class="faq">
+            <button>FAQ</button>
+        </a>
+     
+
+    </header>
+
+
+
+    {% block content %}
+    {% endblock %}  
+</body>
+</html>

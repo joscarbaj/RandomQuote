@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h2>User Information Contact Form</h2>
+    <form action="/form" class="form" method="POST">
+
+        <div class="form__divs">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Write your name" name="name">
+
+        </div>
+
+        <div class="form__divs">
+            <label for="Email">Email</label>
+            <input type="text" id="Email" placeholder="Write your Email" name="email">
+
+        </div>
+        <input type="submit" value="SUBMIT" class="submit">
+    </form>
+</div>
+{% endblock %}

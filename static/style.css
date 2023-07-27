@@ -1,0 +1,186 @@
+body {
+    background: #ddd;
+    list-style: none;
+   
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1b3039;
+    height: 80px;
+    padding: 5px 10%;
+}
+
+.header__nav li {
+    padding: 9px 22px;
+    transition: all .5s;
+    display: inline-block;
+
+}
+
+
+
+.header__nav li:hover {
+    transform: scale(1.2);
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+
+ 
+  
+}
+
+.header a:hover {
+    color: #ccc;
+    
+
+}
+
+
+.faq button {
+    font-weight: 700;
+    color: #1b3039;
+    padding: 15px 20px;
+    background-color: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; transition: all 1.8
+  }
+  
+  .faq button:hover{
+    background-color: #fff;
+    color: #1b3039;
+    transform: scale(1.15);
+  
+  }
+
+
+
+
+
+  .section {
+    margin-top: 100px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  
+  }
+
+  .section h2{
+    text-align:  center;
+    font-size: 35px;
+
+  
+  }
+
+  .section p {
+    text-align:  center;
+    font-size: 24px;
+
+  }
+
+.submit__button {
+    border: none;
+    font-size: 18px;
+    color: #eceff1;
+    padding: 18px 20px;
+    background-color: #1b3039;
+    border-radius: 50px;
+
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+}
+
+
+
+.container {
+
+    background-color: #ccc;
+    width: 40%;
+margin: auto;
+margin-top: 5%;
+color: #ddf;
+background-color: #1b3039;
+border-radius: 10px;
+
+box-shadow: 0 2px 12px gray;
+padding: 20px;
+
+border: 1px solid #1b3039;
+}
+
+.container h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+}
+
+
+.form {
+    color: #ddf;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.form__divs {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+.form__divs label {
+    flex-basis: 120px;
+}
+
+
+.form__divs input {
+    flex: 1;
+}
+
+.submit {
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    padding: 15px 7px;
+    margin-top: 1.9%;
+    border-radius: 50px;
+    transition: .7s;
+    width: 30%;
+    
+    align-self: center;
+   
+}
+
+.submit:hover {
+    transform: scale(1.15);
+    color: #bbb;
+    background-color: #11dddd;
+}
+
+
+
+
+@media only screen  and (max-width:840px) {
+    .container {
+        width: 80%;
+    }
+
+    .section p {
+       
+        font-size: 15px;}
+}
